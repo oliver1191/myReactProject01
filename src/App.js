@@ -1,8 +1,12 @@
-import React from 'react';
+﻿import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NameCard from './components/NameCard'
+import LikesButton from './components/LikesButton'
+import DigitalClock from './components/DigitalClock'
 
 function App() {
+    const testTag = [ '恐龙', '足球小子'];
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +22,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+          </header>
+          <NameCard name="Oliver" number="123456789" isHuman tags={testTag} />
+          <LikesButton />
+          <DigitalClock />
     </div>
   );
 }
